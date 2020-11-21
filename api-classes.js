@@ -43,6 +43,7 @@ class StoryList {
 	 * Returns the new story object
 	 */
 
+  // add story, sends post request based on user and story data
 	async addStory(user, { title, author, url }) {
 		const token = user.loginToken;
 		const response = await axios({
@@ -58,6 +59,7 @@ class StoryList {
 		return story;
   }
   
+  // remove story, sends delete request based on user and story data
 	async removeStory(user, storyId) {
 		const token = user.loginToken;
 		await axios({
@@ -101,7 +103,8 @@ class User {
 	 * - password: a new password
 	 * - name: the user's full name
 	 */
-
+  
+  // create user
 	static async create(username, password, name) {
 		const response = await axios.post(`${BASE_URL}/signup`, {
 			user: {

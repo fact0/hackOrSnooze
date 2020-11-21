@@ -1,0 +1,3 @@
+time taken: 12 hours over a few days
+
+notes: This was pretty challenging even with starter code, knowing where to begin took me awhile so I just started checking things off in the order the exercise asked. As i went on i noticed variables, selectors and CSS that were leftover kind of as clues for what was needed and it kind of came together. I'd like to come back and add in some extra features that were mentioned in the further study, but it seems good for now and I learned a lot.

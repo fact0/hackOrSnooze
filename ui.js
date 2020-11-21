@@ -324,9 +324,11 @@ $(async function () {
 		}
 	}
 
+	// toggle favorite on click, works on fav articles screen:
 	$allStoriesList.on("click", ".star", toggleStoryFavorite);
 	$favoritedArticles.on("click", ".star", toggleStoryFavorite);
 
+	// deletes a story
 	async function deleteStory(e) {
 		const $closestLi = $(e.target).closest("li");
 		const storyId = $closestLi.attr("id");
